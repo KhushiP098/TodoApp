@@ -10,7 +10,7 @@ const Todo = ({ ele, setItems, items, ind }) => {
   const [input,setInput]=useState(Value);
 
   const deleteHandler = (id) => {
-    const updatedItems = items.filter((ele, ind) => ind != id);
+    const updatedItems = items.filter((ele, ind) => ind !== id);
     setItems(updatedItems);
     toast.error(` "${Value}" TODO Deleted!`);
 

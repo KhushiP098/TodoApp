@@ -39,11 +39,11 @@ const Home = () => {
     return (
         <div className='w-full  m-5 font-serif  flex items-center justify-center'>
 
-            <div className='flex flex-col items-center justify-center py-[50px] px-[20px]'>
+            <div className='flex flex-col items-center  py-[50px] px-[20px]'>
 
                 <div className=' flex items-center  justify-center gap-5 my-[30px] '>
                     <p className=' text-[40px] font-bold md:text-[60px] md:leading-[72px]  '>My Todo List</p>
-                    <img src={Img}  className='md:w-[150px] md:h-[150px] w-[100px] h-[100px]' />
+                    <img src={Img}  className='md:w-[150px] md:h-[150px] w-[100px] h-[100px]' alt='img' />
                 </div>
 
 
@@ -71,7 +71,7 @@ const Home = () => {
                 }
 
                 {
-                    items.length!=0 &&
+                    items.length!==0 &&
 
                     <button onClick={()=>{setItems([])
                      toast.success("All ToDo's deleted!")}}
